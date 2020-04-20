@@ -1,0 +1,71 @@
+@import "../global/variables.scss";
+
+@import "../global/variables.scss";
+
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: $black;
+  color: $grey;
+  display: flex;
+  font-size: 18px;
+  &__nav {
+    width: 100%;
+    padding: 0 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+      height: 90px;
+      & > img {
+        align-self: center;
+        height: 50px;
+      }
+      &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > a {
+          text-decoration: none;
+          color: white;
+          padding: 1em 1em 0 1em;
+          width: 130px;
+          height: 30px;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 0.5em;
+      & > img {
+        margin: 0 8px;
+      }
+      &__menu {
+        width: 30px;
+        height: 50px;
+        &--img {
+          margin-left: 10px;
+          margin-top: 20px;
+        }
+        &--open {
+          position: absolute;
+          height: 100px;
+          top: 80px;
+          display: none;
+          & > a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}
